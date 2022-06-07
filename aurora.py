@@ -76,6 +76,11 @@ if __name__=="__main__":
          elif 'open brave' in query:
              bravepath="C:\Program Files\BraveSoftware\Brave-Browser\Application\\brave.exe"
              os.startfile(bravepath)
+         elif 'shut down' or 'shutdown' in query:
+##              spath="C:\Windows\system32\shutdown.exe"
+##              os.startfile(spath)
+                 os.system("shutdown /s /t 1")
+                  
      '''    elif 'emailtohamid' in query:
              try:
                  speak("what should i say?")
@@ -87,7 +92,7 @@ if __name__=="__main__":
                  speak("sorry ; aurora has failed to send the e-mail")
                   '''
      
-              
+         
 
 
 
